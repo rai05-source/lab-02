@@ -64,9 +64,16 @@ h3{
     text-align: justify;
 }
 
+img{
+    height: 500px;
+    margin-left: 50rem;
+    margin-top: -15rem;
+}
+
 .buttons{
     margin-top: 40px;
 }
+
 
 .hero{
     margin-left: 100px;
