@@ -1,0 +1,11 @@
+body{
+    margin: auto;
+}
+
+nav{
+    background-color: gray;
+}
+
+a:link{
+    text-decoration: none;
+}
