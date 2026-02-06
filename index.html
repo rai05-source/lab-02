@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,45 +9,84 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="main.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div class="container">
-        <div class="left-animation"></div>
-            <h1>Welcome to My Portfolio</h1>
-        <div class="right-animation"></div>
-    </div>
-    
-    <header>
-        <nav class="navbar">
-            <div class="navdiv">
-                <div class="name">Rylleeeee</div>
-            </div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Project</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <button class="hirebutton">Hire Me</button>
+<body class="font-['Poppins']">
+<header class="bg-blue-950 text-white p-4 flex items-center justify-between fixed top-0 w-full z-50">
+        <img src="" alt="image" class="h-10 ml-10">
+        <nav class="flex-1 flex justify-center space-x-20">
+            <a href="#home"
+            class="relative no-underline text-white
+                    after:content-[''] after:absolute after:left-1/2 after:-bottom-1
+                    after:h-[2px] after:w-full after:bg-blue-700
+                    after:transform after:-translate-x-1/2 after:scale-x-0
+                    after:transition-transform after:duration-300 after:ease-out
+                    hover:after:scale-x-100">
+                Home
+            </a>
+
+            <a href="#about"
+            class="relative no-underline text-white
+                    after:content-[''] after:absolute after:left-1/2 after:-bottom-1
+                    after:h-[2px] after:w-full after:bg-blue-700
+                    after:transform after:-translate-x-1/2 after:scale-x-0
+                    after:transition-transform after:duration-300 after:ease-out
+                    hover:after:scale-x-100">
+                About
+            </a>
+
+            <a href="#project"
+            class="relative no-underline text-white
+                    after:content-[''] after:absolute after:left-1/2 after:-bottom-1
+                    after:h-[2px] after:w-full after:bg-blue-700
+                    after:transform after:-translate-x-1/2 after:scale-x-0
+                    after:transition-transform after:duration-300 after:ease-out
+                    hover:after:scale-x-100">
+                Projects
+            </a>
+
+            <a href="#contact"
+            class="relative no-underline text-white
+                    after:content-[''] after:absolute after:left-1/2 after:-bottom-1
+                    after:h-[2px] after:w-full after:bg-blue-700
+                    after:transform after:-translate-x-1/2 after:scale-x-0
+                    after:transition-transform after:duration-300 after:ease-out
+                    hover:after:scale-x-100">
+                Contact
+            </a>
         </nav>
+        <button class="mr-10 border-2 pr-5 pl-5 pt-1 pb-1 rounded-full bg-white text-blue-950 hover:bg-blue-950 hover:text-white">Hire Me</button>
     </header>
 
-    <section class="hero">
-        <div>
-            <h2>Hi, </h2>
-            <h3>I am Rylle.</h3>
-            <h4>Frontend/Backend Developer</h4>
-            <p class="info">I can do fullstack, but I prefered backend. 
-                I have experience using Java, C#, Python, HTML, CSS, Javascript. 
-                However im not that good, but I have knowledge about it.
-                <img src="image.jpg" alt="image.png">
-            </p>
+    <section id="home" class="bg-blue-950 w-full h-screen flex items-center">
+        <div class="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-between w-full">
+            <div class="ml-10 mt-20 max-w-2xl slide-in-left">
+                <h1 class="text-5xl font-bold text-white">
+                Hi, I'm <span class="text-blue-600 typewriter">Rylle Manco</span>
+                </h1>
+                <p class="text-xl mt-4 text-white">I'm a web developer learning to create clean and responsive websites. I enjoy turning ideas into simple, user-friendly web pages, experimenting with design, and improving my skills with every project I work on.</p>
+                <button class="mt-10 border-2 pr-5 pl-5 pt-1 pb-1 rounded-full bg-white text-blue-950 hover:bg-blue-950 hover:text-white">Download CV</button>
+            </div>
+
+            <div class="flex justify-end mt-4 slide-in-right">
+                <img class="mr-10 rounded-3xl h-[400px] w-auto" src="image.jpg" alt="">
+            </div>
         </div>
-        <div class="buttons">
-            <button class="contact">Contact Me</button>
-            <a class="cv" href="">Download my CV</a>
-        </div>
+    </section>
+
+    <section id="about" class="bg-white w-full h-screen text-blue-950 flex items-center justify-center">
+        <h1 class="text-4xl sm:text-5xl font-bold">About Me</h1>
+    </section> 
+    
+    <section id="project" class="bg-blue-950 w-full h-screen text-white flex items-center justify-center">
+        <h1 class="text-4xl sm:text-5xl font-bold">My Projects</h1>
+    </section>
+
+    <section id="contact" class="bg-white w-full h-screen text-blue-950 flex items-center justify-center">
+        <h1 class="text-4xl sm:text-5xl font-bold">Contact</h1>
     </section>
 </body>
 </html>
