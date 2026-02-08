@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Message</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="view-message-script.js"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-6">
+
+    <div class="w-full max-w-6xl bg-white rounded-xl shadow-xl p-6">
+        <h2 class="text-2xl font-bold text-blue-950 mb-6 text-center">
+           Message Log
+        </h2>
+
+        <div class="overflow-x-auto">
+            <table class="w-full border border-gray-200 rounded-lg overflow-hidden text-left">
+                <thead class="bg-blue-950 text-white">
+                    <tr>
+                        <th class="px-4 py-3">Name</th>
+                        <th class="px-4 py-3">Email</th>
+                        <th class="px-4 py-3">Phone</th>
+                        <th class="px-4 py-3">Message</th>
+                    </tr>
+                </thead>
+
+                <tbody class="divide-y divide-gray-200">
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-3" id="name"></td>
+                        <td class="px-4 py-3" id="email"></td>
+                        <td class="px-4 py-3" id="phone"></td>
+                        <td class="px-4 py-3 whitespace-pre-wrap" id="message"></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
