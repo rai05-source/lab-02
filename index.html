@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/phosphor-icons"></script>
     <script src="script.js"></script>
@@ -47,13 +49,145 @@
         </div>
     </section>
 
-    <section id="about" class="bg-white w-full h-screen text-blue-950 flex items-center justify-center">
-        <h1 class="text-4xl sm:text-5xl font-bold">About Me</h1>
-    </section> 
-    
-    <section id="project" class="bg-blue-950 w-full h-screen text-white flex items-center justify-center">
-        <h1 class="text-4xl sm:text-5xl font-bold">My Projects</h1>
+   <section id="about" class="bg-white w-full min-h-screen text-blue-950 flex items-center justify-center px-6 py-20">
+        <div class="max-w-6xl w-full grid md:grid-cols-2 gap-12 items-center">
+            <div class="flex justify-center" data-aos="fade-right">
+                <div class="bg-gradient-to-tr from-blue-700 to-blue-950 p-3 rounded-2xl shadow-2xl shadow-blue-950/50">
+                <img src="image 2.jpg" alt="Profile" class="w-80 h-80 object-cover rounded-2xl shadow-xl transition duration-500 hover:scale-105 hover:shadow-2xl">
+                </div>
+            </div>
+            <div data-aos="fade-left">
+                <h1 class="text-4xl sm:text-5xl font-bold mb-6">About Me</h1>
+                <p class="text-lg leading-relaxed mb-6 text-gray-700">
+                    Hello! I'm <span class="font-semibold text-blue-700">Rylle Manco</span>,
+                    a BSIT student and aspiring software developer passionate about building
+                    modern websites and applications. I enjoy creating systems that solve
+                    real-world problems and improve user experience.
+                </p>
+
+                <p class="text-lg leading-relaxed mb-8 text-gray-700">
+                    My interests include web development, UI/UX design, and software
+                    engineering. I continuously improve my skills by learning new
+                    technologies and developing innovative projects.
+                </p>
+                <div>
+                    <h2 class="text-xl font-semibold mb-4">Connect with me</h2>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="https://www.facebook.com/rylle.sescon.manco" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-4 py-2 border border-blue-950 rounded-lg hover:bg-blue-950 hover:text-white transition duration-300 hover:-translate-y-1"><i data-lucide="facebook" class="w-5 h-5"></i>Facebook</a>
+                        <a href="#" class="flex items-center gap-2 px-4 py-2 border border-blue-950 rounded-lg hover:bg-blue-950 hover:text-white transition duration-300 hover:-translate-y-1"><i data-lucide="instagram" class="w-5 h-5"></i>Instagram</a>
+                        <a href="https://github.com/rai05-source" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-4 py-2 border border-blue-950 rounded-lg hover:bg-blue-950 hover:text-white transition duration-300 hover:-translate-y-1"> <i data-lucide="github" class="w-5 h-5"></i>GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <section id="project" class="bg-blue-950 w-full min-h-screen text-white px-6 py-20">
+
+    <!-- SECTION HEADER -->
+    <div class="max-w-7xl mx-auto text-center mb-16">
+        <h1 class="text-4xl sm:text-5xl font-bold mb-4">
+            My Projects
+        </h1>
+        <p class="text-gray-300 max-w-2xl mx-auto">
+            Here are some of the systems and applications I have developed.
+            Each project focuses on functionality, user experience, and modern design.
+        </p>
+    </div>
+
+    <!-- PROJECT GRID -->
+    <div class="max-w-7xl mx-auto grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+
+        <!-- PROJECT CARD -->
+        <div class="group bg-white/10 backdrop-blur-lg rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2">
+
+            <!-- IMAGE PLACEHOLDER -->
+            <div class="h-52 bg-gradient-to-br from-blue-800 to-blue-600 flex items-center justify-center">
+                <span class="text-white/70 text-lg font-semibold">
+                    Project Image
+                </span>
+            </div>
+
+            <!-- CONTENT -->
+            <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2">Library Management System</h3>
+                <p class="text-gray-300 text-sm mb-4">
+                    A desktop-based system developed using C# and MySQL for managing
+                    book borrowing, returning, and user records efficiently.
+                </p>
+
+                <div class="flex gap-2 flex-wrap mb-4">
+                    <span class="px-3 py-1 text-xs bg-blue-800 rounded-full">C#</span>
+                    <span class="px-3 py-1 text-xs bg-blue-800 rounded-full">MySQL</span>
+                    <span class="px-3 py-1 text-xs bg-blue-800 rounded-full">WinForms</span>
+                </div>
+
+                <button class="text-sm font-semibold text-blue-300 group-hover:text-white transition">
+                    View Details →
+                </button>
+            </div>
+        </div>
+
+        <!-- PROJECT CARD -->
+        <div class="group bg-white/10 backdrop-blur-lg rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2">
+
+            <div class="h-52 bg-gradient-to-br from-blue-800 to-blue-600 flex items-center justify-center">
+                <span class="text-white/70 text-lg font-semibold">
+                    Project Image
+                </span>
+            </div>
+
+            <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2">Inn Booking Website</h3>
+                <p class="text-gray-300 text-sm mb-4">
+                    A responsive web application allowing inns to manage bookings,
+                    rooms, and customer reservations online.
+                </p>
+
+                <div class="flex gap-2 flex-wrap mb-4">
+                    <span class="px-3 py-1 text-xs bg-blue-800 rounded-full">HTML</span>
+                    <span class="px-3 py-1 text-xs bg-blue-800 rounded-full">CSS</span>
+                    <span class="px-3 py-1 text-xs bg-blue-800 rounded-full">JavaScript</span>
+                </div>
+
+                <button class="text-sm font-semibold text-blue-300 group-hover:text-white transition">
+                    View Details →
+                </button>
+            </div>
+        </div>
+
+        <!-- PROJECT CARD -->
+        <div class="group bg-white/10 backdrop-blur-lg rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2">
+
+            <div class="h-52 bg-gradient-to-br from-blue-800 to-blue-600 flex items-center justify-center">
+                <span class="text-white/70 text-lg font-semibold">
+                    Project Image
+                </span>
+            </div>
+
+            <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2">Portfolio Website</h3>
+                <p class="text-gray-300 text-sm mb-4">
+                    A modern personal portfolio showcasing projects, skills,
+                    and contact information with responsive UI design.
+                </p>
+
+                <div class="flex gap-2 flex-wrap mb-4">
+                    <span class="px-3 py-1 text-xs bg-blue-800 rounded-full">Tailwind</span>
+                    <span class="px-3 py-1 text-xs bg-blue-800 rounded-full">UI/UX</span>
+                    <span class="px-3 py-1 text-xs bg-blue-800 rounded-full">Responsive</span>
+                </div>
+
+                <button class="text-sm font-semibold text-blue-300 group-hover:text-white transition">
+                    View Details →
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
 
     <section id="contact" class="bg-white w-full min-h-screen flex items-center justify-center">
         <form id="contact-form" class="bg-white p-6 sm:p-10 rounded-lg shadow-2xl shadow-blue-950/50 w-full max-w-md">
@@ -76,12 +210,44 @@
 
             <textarea placeholder="Message" name="message" class="w-full p-3 mb-4 border rounded-lg h-32 focus:ring-2 focus:ring-blue-900 focus:outline-none" required></textarea>
 
-            <button type="submit" class="w-full bg-blue-950 text-white py-2 rounded hover:bg-blue-700 transition">Send Message</button>
+            <button type="submit" class="w-full bg-blue-950 text-white py-3 rounded-xl hover:bg-blue-700 transition font-semibold shadow-lg">
         </form>
     </section>
 
-    <footer class="bg-blue-950 text-white py-6 text-center">
-        <p>&copy; 2026 Rylle Manco. All rights reserved.</p>
-    </footer>
+   <footer class="bg-blue-950 text-white py-10 text-center">
+    <p class="text-sm text-gray-300">
+        © 2026 Rylle Manco — Designed & Developed with passion.
+    </p>
+</footer>
+
 </body>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+    duration: 1000,
+    once: false,   
+    mirror: true   
+});
+
+lucide.createIcons();
+</script>
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+
+        const target = document.querySelector(this.getAttribute("href"));
+
+        target.scrollIntoView({
+            behavior: "smooth"
+        });
+
+        // refresh animation after scroll
+        setTimeout(() => {
+            AOS.refresh();
+        }, 600);
+    });
+});
+</script>
 </html>
